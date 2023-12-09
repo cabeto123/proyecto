@@ -11,6 +11,6 @@ int main(int argc, char* argv[]){
 	
 	Triangulo a(4,6,9,8);
 	a.dibujar();
-	/*Cuadrado c(atoi(argv[1]));
-	c.dibujar();*/
+	Cuadrado c(999);
+	c.dibujar();
 }

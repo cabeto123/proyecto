@@ -35,6 +35,11 @@ void Cuadrado::dibujar()
             cout << setw(width) << setfill(' ') << right << a * 4;
             i += 4;
         }
+        else if (archivoString[i] == 'a' && archivoString[i + 1] == '*' && archivoString[i + 2] == 'a') {
+            int width = 7;
+            cout << setw(width) << setfill(' ') << left << a * a;
+            i += 6;
+        }
         else {
             cout << archivoString[i];
         }
