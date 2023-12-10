@@ -61,88 +61,69 @@ void Cometa::dibujar()
 				}
 			}
 
-			else if (salida[i] == 'c' && salida[i + 1] == 'c' && salida[i + 2] == 'c')
+			else if (salida[i] == 'd' && salida[i + 1] == 'd' && salida[i + 2] == 'd')
 			{
 				i = i + 2;
-				if (c < 10)
+				if (d < 10)
 				{
-					cout << " " << c << " ";
+					cout << " " << d << " ";
 				}
-				else if (c >= 10 && c < 100) {
-					cout << " " << c;
+				else if (d >= 10 && d < 100) {
+					cout << " " << d;
 
 
 				}
 				else {
-					cout << c;
+					cout << d;
 				}
 			}
-			else if (salida[i] == 'B' && salida[i + 1] == 'B' && salida[i + 2] == 'B')
+			else if (salida[i] == 'D' && salida[i + 1] == 'D' && salida[i + 2] == 'D')
 			{
 				i = i + 2;
-				if (B < 10)
+				if (D < 10)
 				{
-					cout << " " << B << " ";
+					cout << " " << D << " ";
 				}
-				else if (B >= 10 && B < 100) {
-					cout << " " << B;
+				else if (D >= 10 && D < 100) {
+					cout << " " << D;
 
 
 				}
 				else {
-					cout << B;
+					cout << D;
 				}
 			}
-			else if (salida[i] == 'h' && salida[i + 1] == 'h' && salida[i + 2] == 'h')
-			{
-				i = i + 2;
-				if (h < 10)
-				{
-					cout << " " << h << " ";
-				}
-				else if (h >= 10 && h < 100) {
-					cout << " " << h;
-
-
-				}
-				else {
-					cout << h;
-				}
-			}
-			else if (salida[i] == 'B' && salida[i + 1] == '+' && salida[i + 2] == 'c') {
-				i = i + 6;
-				int resultado = b + a + B + c;
+			
+			else if (salida[i] == '(' && salida[i + 1] == '2' ) {
+				i = i + 9;
+				int resultado =2*b*a;
 				if (resultado < 10)
 				{
-					cout << "   " << resultado << "   ";
+					cout << "    " << resultado << "     ";
 				}
 				else if (resultado >= 10 && resultado < 100) {
-					cout << "   " << resultado << "  ";
+					cout << "     " << resultado << "     ";
 
 
 				}
 				else if (resultado >= 100 && resultado < 1000) {
-					cout << "  " << resultado << "  ";
+					cout << "    " << resultado << "   ";
 
 
 				}
 				else if (resultado >= 1000 && resultado < 10000) {
-					cout << " " << resultado << "  ";
+					cout << "   " << resultado << "   ";
 
 
 				}
 				else if (resultado >= 10000 && resultado < 100000) {
-					cout << " " << resultado << "  ";
+					cout << "   " << resultado << "  ";
 
 
 				}
-				else if (resultado >= 100000 && resultado < 1000000) {
-					cout << resultado << " ";
-
-
-				}
+			
 				else {
-					cout << resultado;
+					cout <<"  " << resultado<<"  ";
 				}
 
 
@@ -153,48 +134,37 @@ void Cometa::dibujar()
 
 
 			}
-			else if (salida[i] == 'b' && salida[i + 1] == '+' && salida[i + 2] == 'B') {
-				i = i + 6;
-				int resultado = ((b + B) * h) / 2;
+			else if (salida[i] == '(' && salida[i + 1] == 'D') {
+				i = i + 9;
+				int resultado =( D * d )/ 2;
 				if (resultado < 10)
 				{
-					cout << "   " << resultado << "   ";
+					cout << "    " << resultado << "     ";
 				}
 				else if (resultado >= 10 && resultado < 100) {
-					cout << "   " << resultado << "  ";
+					cout << "     " << resultado << "     ";
 
 
 				}
 				else if (resultado >= 100 && resultado < 1000) {
-					cout << "  " << resultado << "  ";
+					cout << "    " << resultado << "   ";
 
 
 				}
 				else if (resultado >= 1000 && resultado < 10000) {
-					cout << " " << resultado << "  ";
+					cout << "   " << resultado << "   ";
 
 
 				}
 				else if (resultado >= 10000 && resultado < 100000) {
-					cout << " " << resultado << "  ";
+					cout << "   " << resultado << "  ";
 
 
 				}
-				else if (resultado >= 100000 && resultado < 1000000) {
-					cout << resultado << " ";
 
-
-				}
 				else {
-					cout << resultado;
+					cout << "  " << resultado << "  ";
 				}
-
-
-
-
-
-
-
 
 
 

@@ -5,6 +5,7 @@
 #include "Rombo.h"
 #include "Rectangulo.h"
 #include "Trapecio.h"
+#include "Cometa.h"
 #include <windows.h>
 
 
@@ -89,6 +90,17 @@ int checkArgs(int argc, char* argv[])
         else if (figura == "Trapecio") {
             if (argc >= 7) {
                 Trapecio r(atoi(argv[2]), atoi(argv[3]), atoi(argv[4]), atoi(argv[5]), atoi(argv[6]));
+                r.dibujar();
+            }
+            else {
+                cout << "No ha ingresado suficientes argumentos!" << endl;
+                ayuda();
+                return 1;
+            }
+        }
+        else if (figura == "Cometa") {
+            if (argc >= 6) {
+                Cometa r(atoi(argv[2]), atoi(argv[3]), atoi(argv[4]), atoi(argv[5]));
                 r.dibujar();
             }
             else {
