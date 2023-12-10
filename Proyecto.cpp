@@ -1,4 +1,4 @@
-#include <iostream>
+﻿#include <iostream>
 #include "Triangulo.h"
 #include "Cuadrado.h"
 #include "funciones.h"
