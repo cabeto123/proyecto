@@ -3,12 +3,13 @@
 #include <iostream>
 #include <fstream>
 using namespace std;
-Trapecio::Trapecio(int b, int B, int a, int c)
+Trapecio::Trapecio(int b, int B, int a, int c,int h)
 {
 	this->b = b;
 	this->B = B;
 	this->a = a;
 	this->c = c;
+	this->h;
 }
 
 void Trapecio::dibujar()
