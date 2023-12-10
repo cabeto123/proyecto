@@ -215,4 +215,3 @@ void Trapecio::dibujar()
 
 
 }
-#include "Trapecio.h"
