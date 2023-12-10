@@ -9,7 +9,7 @@ Trapecio::Trapecio(int b, int B, int a, int c,int h)
 	this->B = B;
 	this->a = a;
 	this->c = c;
-	this->h;
+	this->h=h;
 }
 
 void Trapecio::dibujar()
