@@ -54,9 +54,9 @@ void Rectangulo::dibujar()
             i += 3;
         }//Para variable "b"
         else if (archivoString[i] == 'z' && archivoString[i + 1] == 'z' && archivoString[i + 2] == 'z') {
-            int width = 4;
-            cout << setw(width/2+to_string(2 * a + 2 * b).size()) << setfill(' ') << right << 2*a +2*b;
-            i += 3;
+            int width = 2+to_string(2*a+2*b).size();
+            cout << right << setw(width) << setfill(' ')  << 2*a +2*b/*<< setw(width / 2+1 - to_string(2 * a + 2 * b).size())<<""*/;
+            i += 1 + to_string(2 * a + 2 * b).size();
         }
         else if (archivoString[i] == 'y' && archivoString[i + 1] == 'y' && archivoString[i + 2] == 'y') {
             int width = 6;

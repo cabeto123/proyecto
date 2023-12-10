@@ -133,6 +133,7 @@
     <ClCompile Include="Proyecto.cpp" />
     <ClCompile Include="Rombo.cpp" />
     <ClCompile Include="Triangulo.cpp" />
+    <ClCompile Include="Rectangulo.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Cuadrado.h" />
@@ -140,6 +141,7 @@
     <ClInclude Include="Paralelogramo.h" />
     <ClInclude Include="Rombo.h" />
     <ClInclude Include="Triangulo.h" />
+    <ClCompile Include="Rectangulo.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -3,6 +3,7 @@
 #include "Cuadrado.h"
 #include "Paralelogramo.h"
 #include "Rombo.h"
+#include "Rectangulo.h"
 void ayuda() {
     cout << "Uso: Figuras_Planas.exe ACCION [VARIABLES]" << endl;
     cout << "     Calculos de perimetro y área de Figuras Planas. " << endl;
@@ -50,8 +51,8 @@ int checkArgs(int argc, char* argv[])
         }
         else if (figura == "paralelogramo") {
             if (argc >= 5) {
-                Paralelogramo c(atoi(argv[2]),atoi(argv[3]),atoi(argv[4]));
-                c.dibujar();
+                Paralelogramo p(atoi(argv[2]),atoi(argv[3]),atoi(argv[4]));
+                p.dibujar();
             }
             else {
                 cout << "No ha ingresado suficientes argumentos!" << endl;
@@ -61,8 +62,19 @@ int checkArgs(int argc, char* argv[])
         }
         else if (figura == "rombo") {
             if (argc >= 5) {
-                Rombo c(atoi(argv[2]), atoi(argv[3]), atoi(argv[4]));
-                c.dibujar();
+                Rombo r(atoi(argv[2]), atoi(argv[3]), atoi(argv[4]));
+                r.dibujar();
+            }
+            else {
+                cout << "No ha ingresado suficientes argumentos!" << endl;
+                ayuda();
+                return 1;
+            }
+        }
+        else if (figura == "rectangulo") {
+            if (argc >= 4) {
+                Rectangulo r(atoi(argv[2]), atoi(argv[3]));
+                r.dibujar();
             }
             else {
                 cout << "No ha ingresado suficientes argumentos!" << endl;
