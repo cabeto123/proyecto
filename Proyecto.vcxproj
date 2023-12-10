@@ -129,12 +129,16 @@
   <ItemGroup>
     <ClCompile Include="Cuadrado.cpp" />
     <ClCompile Include="funciones.cpp" />
+    <ClCompile Include="Paralelogramo.cpp" />
     <ClCompile Include="Proyecto.cpp" />
+    <ClCompile Include="Rombo.cpp" />
     <ClCompile Include="Triangulo.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Cuadrado.h" />
     <ClInclude Include="funciones.h" />
+    <ClInclude Include="Paralelogramo.h" />
+    <ClInclude Include="Rombo.h" />
     <ClInclude Include="Triangulo.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
