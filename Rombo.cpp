@@ -117,9 +117,9 @@ void Rombo::dibujar()
 
 
 			}
-			else if ((salida[i] == '(' && salida[i + 1] == 'a')) {
+			else if ((salida[i] == '(' && salida[i + 1] == 'D')) {
 				i = i + 5;
-				int resultado = a* a;
+				int resultado = (D* d)/2;
 				if (resultado < 10)
 				{
 					cout << "  " << resultado << "   ";

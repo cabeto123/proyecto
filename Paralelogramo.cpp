@@ -149,8 +149,11 @@ void Paralelogramo::dibujar() {
 
 
 				}
-				else {
+				else if(resultado >= 100 && resultado < 1000){
 					cout <<" " << resultado << " ";
+				}
+				else {
+					cout << resultado << " ";
 				}
 			}
 			else {
