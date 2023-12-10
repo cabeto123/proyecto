@@ -4,6 +4,9 @@
 #include "Paralelogramo.h"
 #include "Rombo.h"
 #include "Rectangulo.h"
+#include <windows.h>
+
+
 void ayuda() {
     cout << "Uso: Figuras_Planas.exe ACCION [VARIABLES]" << endl;
     cout << "     Calculos de perimetro y área de Figuras Planas. " << endl;
