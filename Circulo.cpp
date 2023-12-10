@@ -34,9 +34,22 @@ void Circulo::dibujar()
             cout << setw(width) << setfill(' ') << right << pir;
             i += 3;
         }
-        else if (archivoString[i] == 'a' && archivoString[i + 1] == '*' && archivoString[i + 2] == 'a') {
+        else if (archivoString[i] == 'z' && archivoString[i + 1] == 'z' && archivoString[i + 2] == 'z') {
+            int width = 4;
+            int piy = 2 * 3.14 * r;
+            cout << setw(width) << setfill(' ') << left << piy;
+            i += 3;
+        }
+        else if (archivoString[i] == 'p' && archivoString[i + 1] == 'i' && archivoString[i + 2] == 'y') {
+            int width = 6;
+            int piy = r*r;
+            cout << setw(width) << setfill(' ') << left << piy;
+            i += 5;
+        }
+        else if (archivoString[i] == 'y' && archivoString[i + 1] == 'y' && archivoString[i + 2] == 'y') {
             int width = 7;
-            cout << setw(width) << setfill(' ') << left << r * r;
+            int piy = 3.14*r*r;
+            cout << setw(width) << setfill(' ') << left << piy;
             i += 6;
         }
         else {

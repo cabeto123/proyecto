@@ -6,6 +6,8 @@
 #include "Rectangulo.h"
 #include "Trapecio.h"
 #include "Cometa.h"
+#include "Circulo.h"
+
 #include <windows.h>
 
 
@@ -87,7 +89,7 @@ int checkArgs(int argc, char* argv[])
                 return 1;
             }
         }
-        else if (figura == "Trapecio") {
+        else if (figura == "trapecio") {
             if (argc >= 7) {
                 Trapecio r(atoi(argv[2]), atoi(argv[3]), atoi(argv[4]), atoi(argv[5]), atoi(argv[6]));
                 r.dibujar();
@@ -98,10 +100,21 @@ int checkArgs(int argc, char* argv[])
                 return 1;
             }
         }
-        else if (figura == "Cometa") {
+        else if (figura == "cometa") {
             if (argc >= 6) {
                 Cometa r(atoi(argv[2]), atoi(argv[3]), atoi(argv[4]), atoi(argv[5]));
                 r.dibujar();
+            }
+            else {
+                cout << "No ha ingresado suficientes argumentos!" << endl;
+                ayuda();
+                return 1;
+            }
+        }
+        else if (figura == "circulo") {
+            if (argc >= 3) {
+                Circulo c(atoi(argv[2]));
+                c.dibujar();
             }
             else {
                 cout << "No ha ingresado suficientes argumentos!" << endl;
