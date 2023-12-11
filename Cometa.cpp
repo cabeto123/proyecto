@@ -121,9 +121,14 @@ void Cometa::dibujar()
 
 
 				}
+				else if (resultado >= 100000 && resultado < 1000000) {
+					cout << "   " << resultado << " ";
+
+
+				}
 			
 				else {
-					cout <<"  " << resultado<<"  ";
+					cout <<" " << resultado << "  ";
 				}
 
 
