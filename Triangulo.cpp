@@ -127,7 +127,7 @@ void Triangulo::dibujar()
 				int resultado = a + b + c;
 				if ( resultado< 10)
 				{
-					cout << "  " << "Resultado" << "  ";
+					cout << "  " << resultado << "  ";
 				}
 				else if (resultado >= 10 && resultado < 100) {
 					cout << "  " << resultado << " ";
