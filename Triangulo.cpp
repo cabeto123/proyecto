@@ -157,21 +157,10 @@ void Triangulo::dibujar()
 			}
 			else if (salida[i] == 'y' && salida[i + 1] == 'y' && salida[i + 2] == 'y')
 			{
-				i = i + 2;
-				int resultado = (b * d )/ 2;
-				if (resultado < 10)
-				{
-					cout << " " << resultado << " ";
-				}
-				else if (resultado >= 10 && resultado < 100) {
-					cout << " " << resultado;
-
-
-				}
-				else {
-					cout << resultado;
-				}
-				}
+				int width = 6;
+				cout << setw(width) << setfill(' ') << left << a * b;
+				i += 5;
+			}
 			else {
 				cout << salida[i];
 			}

@@ -138,23 +138,9 @@ void Paralelogramo::dibujar() {
 			}
 			else if ((salida[i] == 'b' && salida[i + 1] == 'b') && (salida[i + 2] == '*' && salida[i + 3] == 'h') && salida[i + 4] == 'h')
 			{
-				i = i + 4;
-				int resultado = (b * h);
-				if (resultado < 10)
-				{
-					cout << "  " << resultado << "  ";
-				}
-				else if (resultado >= 10 && resultado < 100) {
-					cout << "  " << resultado << " ";
-
-
-				}
-				else if(resultado >= 100 && resultado < 1000){
-					cout <<" " << resultado << " ";
-				}
-				else {
-					cout << resultado << " ";
-				}
+				int width = 6;
+				cout << setw(width) << setfill(' ') << left << a * b;
+				i += 5;
 			}
 			else {
 				cout << salida[i];
