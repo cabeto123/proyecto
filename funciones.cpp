@@ -75,8 +75,17 @@ int checkArgs(int argc, char* argv[])
         }
         else if (figura == "paralelogramo") {
             if (argc >= 5) {
-                Paralelogramo p(atoi(argv[2]),atoi(argv[3]),atoi(argv[4]));
-                p.dibujar();
+                
+                if ((atoi(argv[2]) > 0 && atoi(argv[3]) > 0) && (atoi(argv[4]) > 0 ))
+                {
+                    Paralelogramo p(atoi(argv[2]), atoi(argv[3]), atoi(argv[4]));
+                    p.dibujar();
+                    
+                }
+                else {
+                    cout << "Los valores tienen que ser mayor a 0" << endl;
+
+                }
             }
             else {
                 cout << "No ha ingresado suficientes argumentos!" << endl;
@@ -86,8 +95,17 @@ int checkArgs(int argc, char* argv[])
         }
         else if (figura == "rombo") {
             if (argc >= 5) {
-                Rombo r(atoi(argv[2]), atoi(argv[3]), atoi(argv[4]));
-                r.dibujar();
+                
+                if ((atoi(argv[2]) > 0 && atoi(argv[3]) > 0) && (atoi(argv[4]) > 0 ))
+                {
+                    Rombo r(atoi(argv[2]), atoi(argv[3]), atoi(argv[4]));
+                    r.dibujar();
+                    
+                }
+                else {
+                    cout << "Los valores tienen que ser mayor a 0" << endl;
+
+                }
             }
             else {
                 cout << "No ha ingresado suficientes argumentos!" << endl;
@@ -97,8 +115,17 @@ int checkArgs(int argc, char* argv[])
         }
         else if (figura == "rectangulo") {
             if (argc >= 4) {
-                Rectangulo r(atoi(argv[2]), atoi(argv[3]));
-                r.dibujar();
+                
+                if ((atoi(argv[2]) > 0 && atoi(argv[3]) > 0) )
+                {
+                    Rectangulo r(atoi(argv[2]), atoi(argv[3]));
+                    r.dibujar();
+                    
+                }
+                else {
+                    cout << "Los valores tienen que ser mayor a 0" << endl;
+
+                }
             }
             else {
                 cout << "No ha ingresado suficientes argumentos!" << endl;
@@ -108,8 +135,17 @@ int checkArgs(int argc, char* argv[])
         }
         else if (figura == "trapecio") {
             if (argc >= 7) {
-                Trapecio r(atoi(argv[2]), atoi(argv[3]), atoi(argv[4]), atoi(argv[5]), atoi(argv[6]));
-                r.dibujar();
+                
+                if ((atoi(argv[2]) > 0 && atoi(argv[3]) > 0) && (atoi(argv[4]) > 0 && atoi(argv[5])&&atoi(argv[6])>0))
+                {
+                    Trapecio r(atoi(argv[2]), atoi(argv[3]), atoi(argv[4]), atoi(argv[5]), atoi(argv[6]));
+                    r.dibujar();
+                    
+                }
+                else {
+                    cout << "Los valores tienen que ser mayor a 0" << endl;
+
+                }
             }
             else {
                 cout << "No ha ingresado suficientes argumentos!" << endl;
@@ -119,8 +155,17 @@ int checkArgs(int argc, char* argv[])
         }
         else if (figura == "cometa") {
             if (argc >= 6) {
-                Cometa r(atoi(argv[2]), atoi(argv[3]), atoi(argv[4]), atoi(argv[5]));
-                r.dibujar();
+                
+                if ((atoi(argv[2]) > 0 && atoi(argv[3]) > 0) && (atoi(argv[4]) > 0 && atoi(argv[5])))
+                {
+                    Cometa r(atoi(argv[2]), atoi(argv[3]), atoi(argv[4]), atoi(argv[5]));
+                    r.dibujar();
+                    
+                }
+                else {
+                    cout << "Los valores tienen que ser mayor a 0" << endl;
+
+                }
             }
             else {
                 cout << "No ha ingresado suficientes argumentos!" << endl;
@@ -130,8 +175,16 @@ int checkArgs(int argc, char* argv[])
         }
         else if (figura == "circulo") {
             if (argc >= 3) {
-                Circulo c(atoi(argv[2]));
-                c.dibujar();
+                
+                if ((atoi(argv[2]) > 0 ))
+                {
+                    Circulo c(atoi(argv[2]));
+                    c.dibujar();
+                }
+                else {
+                    cout << "Los valores tienen que ser mayor a 0" << endl;
+
+                }
             }
             else {
                 cout << "No ha ingresado suficientes argumentos!" << endl;
