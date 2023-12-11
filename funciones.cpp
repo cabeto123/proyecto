@@ -36,8 +36,16 @@ int checkArgs(int argc, char* argv[])
         string figura = argv[1];
         if (figura == "triangulo") {
             if (argc >= 6) {
-                Triangulo t(atoi(argv[2]), atoi(argv[3]), atoi(argv[4]), atoi(argv[5]));
-                t.dibujar();
+                if ((atoi(argv[2])>0&& atoi(argv[3])>0)&&( atoi(argv[4])>0&& atoi(argv[5])))
+                {
+
+                    Triangulo t(atoi(argv[2]), atoi(argv[3]), atoi(argv[4]), atoi(argv[5]));
+                    t.dibujar();
+                }
+                else {
+                    cout << "Los valores tienen que ser mayor a 0" << endl;
+                
+                }
             }
             else {
                 cout << "No ha ingresado suficientes argumentos!" << endl;
@@ -47,8 +55,17 @@ int checkArgs(int argc, char* argv[])
         }
         else if (figura == "cuadrado") {
             if (argc >= 3) {
-                Cuadrado c(atoi(argv[2]));
-                c.dibujar();
+                
+                if ((atoi(argv[2]) > 0 ))
+                {
+
+                    Cuadrado c(atoi(argv[2]));
+                    c.dibujar();
+                }
+                else {
+                    cout << "Los valores tienen que ser mayor a 0" << endl;
+
+                }
             }
             else {
                 cout << "No ha ingresado suficientes argumentos!" << endl;
