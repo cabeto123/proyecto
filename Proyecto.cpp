@@ -11,7 +11,7 @@ using namespace std;
 int main(int argc, char* argv[]) {
 	SetConsoleCP(CP_UTF8);
 	SetConsoleOutputCP(CP_UTF8);
-	setlocale(LC_ALL, "spanish");
+	
 	if (checkArgs(argc, argv) == 1)
 		return 1;
 }
